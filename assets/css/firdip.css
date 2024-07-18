@@ -2570,7 +2570,9 @@ h6 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
+.main-footer__copyright a:hover{
+  color: #fff;
+}
 .footer-widget__title {
   font-family: var(--firdip-font, "Roboto", sans-serif);
   font-style: normal;
@@ -2727,7 +2729,7 @@ h6 {
   }
 }
 .footer-widget--contact {
-  margin-left: 70px;
+  margin-left: 50px;
 }
 @media (max-width: 1199px) {
   .footer-widget--contact {
@@ -3183,7 +3185,7 @@ h6 {
   }
 }
 .main-header__nav {
-  margin-left: 114px;
+  margin-left: 50px;
   margin-right: auto;
 }
 .main-header__right {
