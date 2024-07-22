@@ -3153,7 +3153,7 @@ h6 {
 # Navigations
 --------------------------------------------------------------*/
 .main-header {
-  background-color: var(--firdip-secondary, #232728);
+  background-color: var(--firdip-white, #fff);
   position: relative;
 }
 .main-header .container-fluid {
@@ -3185,7 +3185,7 @@ h6 {
   }
 }
 .main-header__nav {
-  margin-left: 50px;
+  margin-left: 90px;
   margin-right: auto;
 }
 .main-header__right {
@@ -3282,7 +3282,7 @@ h6 {
 }
 .main-header__right__info__item {
   font-size: 22px;
-  color: var(--firdip-white, #fff);
+  color: var(--firdip-text, #7D8081);
   transition: all 0.4s ease-in-out;
 }
 @media (max-width: 575px) {
@@ -3617,7 +3617,7 @@ h6 {
   right: 0;
   z-index: 999;
   top: 0;
-  background-color: var(--firdip-secondary, #232728);
+  background-color: var(--firdip-white, #fff);
   transform: translateY(-100%);
   box-shadow: 0px 3px 18px rgba(var(--firdip-black-rgb, 23, 24, 24), 0.07);
   transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
@@ -3713,11 +3713,10 @@ h6 {
   align-items: center;
   position: relative;
   transition: all 500ms ease;
-  color: var(--firdip-white, #fff);
+  color: var(--firdip-text, #7D8081);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  text-transform: uppercase;
   line-height: 19px;
 }
 .main-menu .main-menu__list > li.current > a,
@@ -3774,7 +3773,6 @@ h6 {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
-  text-transform: uppercase;
 }
 .main-menu .sub-menu .dropdown::before {
   position: absolute;
