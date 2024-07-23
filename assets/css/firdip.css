@@ -4077,7 +4077,8 @@ body.megamenu-popup-active .mobile-nav__content {
   z-index: 1;
 }
 .why-choose-one--home {
-  margin-top: 30px;
+  margin-top: 130px;
+  margin-bottom: 125px;
 }
 .why-choose-one__bg {
   position: absolute;
