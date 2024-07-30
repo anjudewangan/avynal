@@ -13840,9 +13840,9 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .about-three__feature {
   background: var(--firdip-text-gray, #EFE6E1);
-  padding: 30px;
-  display: flex;
-  align-items: center;
+  padding: 10px 30px;
+  /* display: flex;
+  align-items: center; */
   margin-bottom: 30px;
   border-bottom: 1px solid var(--firdip-text-gray, #EFE6E1);
 }
@@ -13860,7 +13860,7 @@ body.megamenu-popup-active .mobile-nav__content {
   display: flex;
   align-items: center;
   gap: 13px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 }
 
 .about-three__feature__item__top__title {
