@@ -686,7 +686,7 @@ h6 {
 }
 
 .firdip-owl__carousel--basic-nav.owl-carousel .owl-nav button span:hover {
-  background-color: var(--firdip-base, #e51313);
+  background-color: #5d9413;
   color: var(--firdip-white, #fff);
 }
 
@@ -6166,8 +6166,8 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .testimonials-three__thumb__item:nth-child(2) {
-  top: 102px;
-  right: 90px;
+  top: 28px;
+  right: 60px;
 }
 
 @media (max-width: 1199px) and (min-width: 991px) {
@@ -6177,8 +6177,8 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .testimonials-three__thumb__item:nth-child(3) {
-  top: 190px;
-  right: 92px;
+  top: 171px;
+  right: 87px;
 }
 
 @media (max-width: 1199px) and (min-width: 991px) {
@@ -6199,12 +6199,23 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .testimonials-three__thumb__item:nth-child(5) {
-  top: 306px;
-  right: 102px;
+  top: 284px;
+  right: 63px;
 }
 
 @media (max-width: 1199px) and (min-width: 991px) {
   .testimonials-three__thumb__item:nth-child(5) {
+    right: 40px;
+  }
+}
+
+.testimonials-three__thumb__item:nth-child(6) {
+  top: 38px;
+  right: 258px;
+}
+
+@media (max-width: 1199px) and (min-width: 991px) {
+  .testimonials-three__thumb__item:nth-child(6) {
     right: 40px;
   }
 }
@@ -6214,7 +6225,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .testimonials-three__inner {
-  background: var(--firdip-base, #e51313);
+  background: #5d9413;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
 }
 
@@ -6224,7 +6235,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background: var(--firdip-white, #fff);
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
   position: relative;
-  padding: 50px 50px 50px 80px;
+  padding: 50px 50px 80px 80px;
 }
 
 @media (max-width: 1199px) and (min-width: 991px) {
@@ -6251,10 +6262,9 @@ body.megamenu-popup-active .mobile-nav__content {
   font-weight: 500;
   font-size: 16px;
   line-height: 188%;
-  margin-bottom: 0;
+  margin-bottom: 100px;
   padding-bottom: 0;
   color: var(--firdip-text, #7D8081);
-  margin-bottom: 100px;
 }
 
 .testimonials-three__item__author__name {
@@ -6262,7 +6272,7 @@ body.megamenu-popup-active .mobile-nav__content {
   font-weight: 700;
   font-size: 24px;
   line-height: 108%;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   padding-bottom: 0;
 }
 
@@ -6316,7 +6326,7 @@ body.megamenu-popup-active .mobile-nav__content {
   height: 143px;
   clip-path: polygon(30% 0%, 100% 0, 100% 100%, 0% 100%);
   z-index: 1;
-  background: var(--firdip-text-gray, #EFE6E1);
+  background: rgba(93, 148, 19, 0.3);
 }
 
 @media (max-width: 575px) {
@@ -6351,7 +6361,7 @@ body.megamenu-popup-active .mobile-nav__content {
   left: -50px;
   right: -70px;
   height: 1px;
-  background: var(--firdip-text-gray, #EFE6E1);
+  background: rgba(93, 148, 19, 0.3);
   position: absolute;
   bottom: 50%;
   z-index: -1;
@@ -6374,7 +6384,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(238, 43, 43, 0.34);
+  background: rgba(93, 148, 19, 0.34);
   transform: scale(2.3);
   border-radius: 50%;
   visibility: hidden;
@@ -6383,7 +6393,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .testimonials-three .testimonials-three__carousel .owl-dots .active span {
-  background-color: var(--firdip-base, #e51313);
+  background-color: #5d9413;
 }
 
 .testimonials-three .testimonials-three__carousel .owl-dots .active span::after {
@@ -6393,7 +6403,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .testimonials-three .firdip-owl__carousel--basic-nav.owl-carousel .owl-dots .owl-dot:hover span,
 .testimonials-three .firdip-owl__carousel--basic-nav.owl-carousel .owl-dots .owl-dot.active span {
-  background-color: var(--firdip-base, #e51313);
+  background-color: #5d9413;
   border: 0px solid transparent;
 }
 
@@ -13639,6 +13649,7 @@ body.megamenu-popup-active .mobile-nav__content {
   padding-bottom: 0;
   color: var(--firdip-white, #fff);
   max-width: 340px;
+  text-align: justify;
 }
 
 .about-two__box:hover .about-two__box__icon {
@@ -14195,6 +14206,7 @@ body.megamenu-popup-active .mobile-nav__content {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+  text-align: justify;
 }
 
 .service-card__thumb {
@@ -19708,4 +19720,9 @@ body.boxed-wrapper .funfact-one {
   top: -35px;
   left: -8px;
   width: 7px;
+}
+
+.text-green {
+  color: #5d9413;
+  font-weight: 700;
 }
