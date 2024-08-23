@@ -6650,6 +6650,10 @@ body.megamenu-popup-active .mobile-nav__content {
   clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
 }
 
+.cta-two__thumb__item .gray-image {
+  filter: grayscale(100%);
+}
+
 .cta-two__thumb__item__shape {
   position: absolute;
   top: -1px;
@@ -13694,6 +13698,11 @@ body.megamenu-popup-active .mobile-nav__content {
   margin-right: 8px;
 }
 
+.cta-two .about-two__list__item__content i {
+  color: var(--firdip-white, #fff);
+  margin-right: 8px;
+}
+
 .about-two__list__item__content+.about-two__list__item__content {
   margin-top: 18px;
 }
@@ -19913,4 +19922,10 @@ body.boxed-wrapper .funfact-one {
   .main-timeline .title {
     font-size: 18px;
   }
+}
+
+.advantages-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
