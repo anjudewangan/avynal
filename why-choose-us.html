@@ -201,69 +201,32 @@
             </div>
         </section>
         <!-- Timeline start -->
-        <div id="content" class="content">
-            <div class="container-fluid timeline">
-                <div class="timeline__points">
-                    <div class="horizontal-line"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 year-2018 year-2019">
-                                <!-- point -->
-                                <div class="point" v-for="(point, index) in timeline2018">
-                                    <div class="upper-content">
-                                        <div class="tooltip tooltip--top" :ref="'tooltip2018' + index"
-                                            v-if="index % 2 != 0">
-                                            <ul>
-                                                <li v-for="task in point.points" v-text="task">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="circle"
-                                        v-bind:class="{inThisQuarter: point.quarter == currentQuarter && year == 2018}"
-                                        v-text="point.quarter" v-bind:ref="'circle2018' + index"
-                                        v-on:click="toggleTooltip(2018, index)">
-                                    </div>
-                                    <div class="bottom-content">
-                                        <div class="tooltip tooltip--bottom" v-bind:ref="'tooltip2018' + index"
-                                            v-if="index % 2 == 0">
-                                            <ul>
-                                                <li v-for="task in point.points" v-text="task">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- point: END-->
-                                <!-- point -->
-                                <div class="point" v-for="(point, index) in timeline2019">
-                                    <div class="upper-content">
-                                        <div class="tooltip tooltip--top" v-bind:ref="'tooltip2019' + index"
-                                            v-if="index % 2 != 0">
-                                            <ul>
-                                                <li v-for="task in point.points" v-text="task">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="circle"
-                                        v-bind:class="{inThisQuarter: point.quarter == currentQuarter && year == 2019}"
-                                        v-text="point.quarter" v-bind:ref="'circle2019' + index"
-                                        v-on:click="toggleTooltip(2019, index)">
-                                    </div>
-                                    <div class="bottom-content">
-                                        <div class="tooltip tooltip--bottom" v-bind:ref="'tooltip2019' + index"
-                                            v-if="index % 2 == 0">
-                                            <ul>
-                                                <li v-for="task in point.points" v-text="task">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- point: END-->
-                            </div>
-                        </div>
+        <div class="timeline">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                        <img src="./assets/images/why-choose-us/icon1.png" alt="" data-bs-toggle="modal"
+                            data-bs-target="#icon1">
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <img src="./assets/images/why-choose-us/icon2.png" alt="" data-bs-toggle="modal"
+                            data-bs-target="#icon2">
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <img src="./assets/images/why-choose-us/icon3.png" alt="" data-bs-toggle="modal"
+                            data-bs-target="#icon3">
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <img src="./assets/images/why-choose-us/icon4.png" alt="" data-bs-toggle="modal"
+                            data-bs-target="#icon4">
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <img src="./assets/images/why-choose-us/icon5.png" alt="" data-bs-toggle="modal"
+                            data-bs-target="#icon5">
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <img src="./assets/images/why-choose-us/icon6.png" alt="" data-bs-toggle="modal"
+                            data-bs-target="#icon6">
                     </div>
                 </div>
             </div>
@@ -1001,6 +964,81 @@
             </div>
         </footer>
     </div><!-- /.page-wrapper -->
+    <!-- Modal -->
+    <div class="modal fade" id="icon1" tabindex="-1" aria-labelledby="icon1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="icon1Label">Unmatched Versatility</h5>
+                </div>
+                <div class="modal-body">
+                    <p>We cater to a wide range of industrial settings, including machinery spaces, electrical
+                        switchgear, hazardous storage areas, scientific environments, and even high-hazard ATEX zones
+                        prone to explosive atmospheres.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="icon2" tabindex="-1" aria-labelledby="icon2Labe2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="icon2Label">Fail-Safe Reliability</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Our systems boast 100% redundant actuations, ensuring immediate fire suppression whenever needed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="icon3" tabindex="-1" aria-labelledby="icon1Labe3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="icon3Label">Compact Footprint</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Avynal's systems are significantly smaller than traditional fire suppression solutions, maximizing space utilization in critical industrial areas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="icon4" tabindex="-1" aria-labelledby="icon1Labe4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="icon4Label">Revolutionary Maintenance</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Unlike most aerosol systems, ours offer the unique advantage of being checked and repaired instead of replaced. This extends lifespan, reduces waste, and minimizes operational costs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="icon5" tabindex="-1" aria-labelledby="icon1Labe5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="icon5Label">Sustainable Choice</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Our 100% recyclable systems minimize environmental impact, and our buy-back program makes going green effortless.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="icon6" tabindex="-1" aria-labelledby="icon1Labe6" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="icon6Label">Safe for People and Equipment</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Our non-toxic aerosol agent is harmless to humans and electronics, ensuring the safety of your workforce and valuable industrial equipment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
@@ -1118,116 +1156,6 @@
     <script src="./assets/js/firdip.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js'></script>
-    <script>
-        var timeline2018 = [
-            {
-                quarter: 'Q3',
-                points: [
-                    'Website launch',
-                    'Whitepaper release',
-                    'TOKOIN token distributions starts',
-                    'TOKOIN Wallet development'
-                ]
-            },
-            {
-                quarter: 'Q4',
-                points: [
-                    'POC Launch on TestNet',
-                    'Onboard logistic partners on Tokoin ecosystem'
-                ]
-            }
-        ];
-
-        var timeline2019 = [
-            {
-                quarter: 'Q1',
-                points: [
-                    'Launch dApps on MainNet',
-                    'Onboard Warehousing partners on Tokoin ecosystem',
-                    'Onboard Financial partners on Tokoin ecosystem',
-                    'Expand local operation to 10 tier-one cities in Indonesia',
-                    'Onboard 50.000 users on Tokoin ecosystem'
-                ]
-            },
-            {
-                quarter: 'Q2',
-                points: [
-                    'Launch Data Reputation engine',
-                    'Launch Data Visualization platform',
-                    'Launch Partner Suite platform'
-                ]
-            },
-            {
-                quarter: 'Q3',
-                points: [
-                    'Launch TOKOIN POS system',
-                    'Launch Data Exchange platform for Token Stacking and Loyalty program',
-                    'Expand local operation to all capital cities in Indonesia',
-                    'Onboard 10.000 users for TOKOIN POS system'
-                ]
-            },
-            {
-                quarter: 'Q4',
-                points: [
-                    'Expand hyper-local operation to Thailand,  Vietnam, Philippine, Malaysia and other potential emerging market'
-                ]
-            }
-        ];
-
-        var date = new Date();
-        var month = date.getMonth();
-        var year = date.getFullYear();
-
-        var vm = new Vue({
-            el: '#content',
-            data: {
-                timeline2018: timeline2018,
-                timeline2019: timeline2019,
-                month: month,
-                year: year
-            },
-            computed: {
-                currentQuarter: function () {
-                    if (this.month >= 0 && this.month <= 2) return 'Q1';
-                    else if (this.month >= 3 && this.month <= 5) return 'Q2';
-                    else if (this.month >= 6 && this.month <= 8) return 'Q3';
-                    return 'Q4';
-                }
-            },
-            methods: {
-                normalizeSelection(year, idx) {
-                    var circ, tooltip, yearTemp = 2018, j = 0;
-                    for (var i = 0; i < 6; i++) {
-                        if (i > 1) {
-                            yearTemp = 2019;
-                            j = 0;
-                        }
-
-                        if (j != idx) {
-                            circ = this.$refs['circle' + yearTemp + j][0];
-                            tooltip = this.$refs['tooltip' + yearTemp + j][0];
-                            circ.classList.remove('active');
-                            tooltip.classList.remove('active');
-                        }
-                        j++;
-                    }
-                },
-
-                toggleTooltip(year, idx) {
-                    var circ = this.$refs['circle' + year + idx][0];
-                    console.log(circ);
-                    var tooltip = this.$refs['tooltip' + year + idx][0];
-                    if (!circ.classList.contains('active')) {
-                        circ.classList.add('active');
-                        tooltip.classList.add('active');
-                    } else {
-                        circ.classList.remove('active');
-                        tooltip.classList.remove('active');
-                    }
-                },
-            }
-        });
-    </script>
 </body>
 
 </html>
