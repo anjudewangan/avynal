@@ -19768,6 +19768,7 @@ body.boxed-wrapper .funfact-one {
 /* Timeline */
 .timeline {
   padding: 100px 0px;
+  background-color: #f7f6fb;
 }
 
 .timeline img {
@@ -19786,20 +19787,40 @@ body.boxed-wrapper .funfact-one {
 }
 
 #icon1 .modal-header {
-  background-color: #a25fd3;
+  background-color: #e51313;
 }
+
 #icon2 .modal-header {
-  background-color: #FDCB36;
+  background-color: #7D8081;
 }
+
 #icon3 .modal-header {
-  background-color: #FF4328;
+  background-color: #000000;
 }
+
 #icon4 .modal-header {
-  background-color: #07B0F5;
+  background-color: #00007C;
 }
+
 #icon5 .modal-header {
-  background-color: #02D4BB;
+  background-color: #5E9641;
 }
+
 #icon6 .modal-header {
-  background-color: #1AACB8;
+  background-color: #06402B;
+}
+
+.timeline .even-col {
+  margin-top: 145px;
+}
+
+.timeline h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.pb-90{
+  padding-bottom: 90px;
+}
+.pb-65{
+  padding-bottom: 65px;
 }
