@@ -3,6 +3,16 @@
 <html lang="en">
 
 <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="Avinal ABFS fire protection, Aerosol Generating Unit (AGU), Revolutionary fire safety, Fire detection system, Fire-extinguishing particles, Innovative fire suppression, Fire protection technology, AGU fire safety, Advanced fire protection, Fire sensor technology">
+    <meta property="og:site_name" content="Home | Avynal Suppressants Private Limited">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
     <!-- ======== Page title ============ -->
     <title>Home | Avynal Suppressants Private Limited</title>
     <meta name="description"
@@ -16,26 +26,56 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(document).ready(function () {
-            $.get('head.html', function (data) {
-                $(data).filter('link, meta').appendTo('head');
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $.get('script.html', function (data) {
-                $(data).filter('script').each(function () {
-                    const script = document.createElement('script');
-                    script.src = $(this).attr('src');
-                    script.async = $(this).attr('async') !== undefined;
-                    script.defer = $(this).attr('defer') !== undefined;
-                    document.body.appendChild(script);
-                });
-            });
-        });
-    </script>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="./assets/images/logo/apple-touch-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo/favicon-16x16.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Bootstrap css plugins -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--  bootstrap-select css plugins -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"
+        integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  fontawesome css plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--  jquery-ui css plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css"
+        integrity="sha512-lvdq1fIyCp6HMWx1SVzXvGC4jqlX3e7Xm7aCBrhj5F1WdWoLe0dBzU0Sy10sheZYSkJpJcboMNO/4Qz1nJNxfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  jarallax css plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.4/jarallax.css"
+        integrity="sha512-BTgVhP+g4WxjF6upTASMi1HyyCR7LZwn4ejaRpB6h1+UvZ0M9ISnv5nLjbOz9jzk5A1l70gsW+1IrmNutMrQoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css"
+        integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  nouislider css plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.1.1/nouislider.min.css"
+        integrity="sha512-xPyQQl5mtzHWgCMGY9hRAiLUhaeOifGs1FC93CL5ByEdue1WrtELD/i95H3qKkeoVKtOO+cXQb0F/CHdopuIvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  slider css plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- template styles -->
+    <link rel="stylesheet" href="./assets/css/firdip.css">
 </head>
 
 <body class="custom-cursor">
@@ -192,9 +232,9 @@
                             <div class="about-one__thumb wow fadeInLeft" data-wow-duration='1500ms'
                                 data-wow-delay='300ms'>
                                 <div class="about-one__thumb__item about-one__thumb__item--one">
-                                    <img src="./assets/images/about/1.png" alt="firdip image">
+                                    <img src="./assets/images/about/1.png" alt="A metal box and two metal containers arranged together, showcasing a compact and organized storage solution.">
                                     <div class="about-one__thumb__item__three">
-                                        <img src="./assets/images/shapes/gas.png" alt="firdip">
+                                        <img src="./assets/images/shapes/gas.png" alt="Gas Image">
                                     </div>
                                 </div>
                                 <div class="about-one__thumb__funfact count-box">
@@ -257,7 +297,7 @@
                                     <div class="col-md-4">
                                         <div class="about-one__list__left wow fadeInUp" data-wow-duration='1500ms'
                                             data-wow-delay='300ms'>
-                                            <div class="about-one__list__btn text-end">
+                                            <div class="about-one__list__btn text-end text-sm-center">
                                                 <a href="./about.html" class="firdip-btn">Discover More</a>
                                             </div>
                                         </div>
@@ -329,7 +369,8 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/data-center.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/data-center.jpg" alt="Data
+                                        centers & server rooms image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -352,7 +393,8 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/electrical-panel.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/electrical-panel.jpg" alt="Electrical
+                                        panels & switchgear image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -375,7 +417,8 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/libraries.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/libraries.jpg" alt="Libraries,
+                                        archives, & museums image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -398,7 +441,7 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/telecommunication.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/telecommunication.jpg" alt="Telecommunication facilities image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -421,7 +464,7 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/medical.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/medical.jpg" alt="Medical facilities image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -444,7 +487,8 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/transportation.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/transportation.jpg" alt="Transportation
+                                        facilities image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -467,7 +511,8 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/clean-room.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/clean-room.jpg" alt="Clean
+                                        rooms & laboratories image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -491,7 +536,7 @@
                                 </div>
                                 <div class="service-card__thumb">
                                     <div class="service-card__thumb__item">
-                                        <img src="./assets/images/application/building.jpg" alt="voldor image">
+                                        <img src="./assets/images/application/building.jpg" alt="Historical sites and heritage buildings image">
                                     </div>
                                     <a href="./application.html" class="voldor-btn voldor-btn--base"><i
                                             class="icon-right-arrow-angle"></i></a>
@@ -508,7 +553,7 @@
             <div class="funfact-one__bg" style="background-image: url(./assets/images/shapes/funfact-bg.png);"></div>
             <div class="container">
                 <div class="row gutter-y-30">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-6">
                         <div class="funfact-one__item count-box wow fadeInUp" data-wow-duration='1500ms'
                             data-wow-delay='300ms'>
                             <div class="funfact-one__item__icon">
@@ -521,7 +566,7 @@
                             <p class="funfact-one__item__text">Years of <br> Development</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-6">
                         <div class="funfact-one__item count-box wow fadeInUp" data-wow-duration='1500ms'
                             data-wow-delay='500ms'>
                             <div class="funfact-one__item__icon">
@@ -534,7 +579,7 @@
                             <p class="funfact-one__item__text">Successful <br> Installations </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-6">
                         <div class="funfact-one__item count-box wow fadeInUp" data-wow-duration='1500ms'
                             data-wow-delay='700ms'>
                             <div class="funfact-one__item__icon">
@@ -547,7 +592,7 @@
                             <p class="funfact-one__item__text">Effective in <br> Fire Suppression </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-6">
                         <div class="funfact-one__item count-box wow fadeInUp" data-wow-duration='1500ms'
                             data-wow-delay='900ms'>
                             <div class="funfact-one__item__icon">
@@ -622,7 +667,7 @@
                             <div class="why-choose-one__thumb">
                                 <div class="why-choose-one__thumb__item wow fadeInRight" data-wow-duration='1500ms'
                                     data-wow-delay='300ms'>
-                                    <img src="./assets/images/product/product.png" alt="firdip">
+                                    <img src="./assets/images/product/product.png" alt="product image">
                                 </div>
                             </div>
                         </div>
@@ -647,7 +692,7 @@
                         <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
                             <a href="news-events-details.html" class="blog-card__image">
                                 <img src="./assets/images/news/1.jpg"
-                                    alt="Elevating Heroism Apeium Eques in the Fire Service">
+                                    alt="Latest blog Image 1">
                             </a>
 
                             <div class="blog-card__content">
@@ -669,7 +714,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <a href="news-events-details.html" class="blog-card__image">
-                                <img src="./assets/images/news/2.jpg" alt="Great Firefighters Share aperiam eaque">
+                                <img src="./assets/images/news/2.jpg" alt="Latest blog Image 2">
                             </a>
 
                             <div class="blog-card__content">
@@ -691,7 +736,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
                             <a href="news-events-details.html" class="blog-card__image">
-                                <img src="./assets/images/news/3.jpg" alt="Tips for Emergency Medical Service">
+                                <img src="./assets/images/news/3.jpg" alt="Latest blog Image 3">
                             </a>
 
                             <div class="blog-card__content">
@@ -740,7 +785,7 @@
                                 <div class="col-lg-4">
                                     <div class="testimonials-two__item__thumb">
                                         <div class="testimonials-two__item__thumb__item">
-                                            <img src="./assets/images/resources/testi-2-1.png" alt="firdip image">
+                                            <img src="./assets/images/resources/testi-2-1.png" alt="Testimonial client image 1">
                                             <div class="testimonials-two__item__content">
                                                 <h4 class="testimonials-two__item__content__title">Leslie Alexander</h4>
                                                 <span class="testimonials-two__item__content__dec">citizen</span>
@@ -777,7 +822,7 @@
                                 <div class="col-lg-4">
                                     <div class="testimonials-two__item__thumb">
                                         <div class="testimonials-two__item__thumb__item">
-                                            <img src="./assets/images/resources/testi-2-1.png" alt="firdip image">
+                                            <img src="./assets/images/resources/testi-2-1.png" alt="Testimonial client image 2">
                                             <div class="testimonials-two__item__content">
                                                 <h4 class="testimonials-two__item__content__title">Leslie Alexander</h4>
                                                 <span class="testimonials-two__item__content__dec">citizen</span>
@@ -814,7 +859,7 @@
                                 <div class="col-lg-4">
                                     <div class="testimonials-two__item__thumb">
                                         <div class="testimonials-two__item__thumb__item">
-                                            <img src="./assets/images/resources/testi-2-1.png" alt="firdip image">
+                                            <img src="./assets/images/resources/testi-2-1.png" alt="Testimonial client image 3">
                                             <div class="testimonials-two__item__content">
                                                 <h4 class="testimonials-two__item__content__title">Leslie Alexander</h4>
                                                 <span class="testimonials-two__item__content__dec">citizen</span>
@@ -863,27 +908,27 @@
 				}'>
                             <a href="#item1" class="item" data-hash="item1">
                                 <span class="testimonials-two__meta-thumb"><img
-                                        src="./assets/images/resources/testi-3-1.png" alt="firdip"></span>
+                                        src="./assets/images/resources/testi-3-1.png" alt="client image 1"></span>
                             </a>
                             <a href="#item2" class="item" data-hash="item2">
                                 <span class="testimonials-two__meta-thumb"><img
-                                        src="./assets/images/resources/testi-3-2.png" alt="firdip"></span>
+                                        src="./assets/images/resources/testi-3-2.png" alt="client image 2"></span>
                             </a>
                             <a href="#item3" class="item" data-hash="item3">
                                 <span class="testimonials-two__meta-thumb"><img
-                                        src="./assets/images/resources/testi-3-3.png" alt="firdip"></span>
+                                        src="./assets/images/resources/testi-3-3.png" alt="client image 3"></span>
                             </a>
                             <a href="#item1" class="item" data-hash="item1">
                                 <span class="testimonials-two__meta-thumb"><img
-                                        src="./assets/images/resources/testi-3-1.png" alt="firdip"></span>
+                                        src="./assets/images/resources/testi-3-1.png" alt="client image 4"></span>
                             </a>
                             <a href="#item2" class="item" data-hash="item2">
                                 <span class="testimonials-two__meta-thumb"><img
-                                        src="./assets/images/resources/testi-3-2.png" alt="firdip"></span>
+                                        src="./assets/images/resources/testi-3-2.png" alt="client image 5"></span>
                             </a>
                             <a href="#item3" class="item" data-hash="item3">
                                 <span class="testimonials-two__meta-thumb"><img
-                                        src="./assets/images/resources/testi-3-3.png" alt="firdip"></span>
+                                        src="./assets/images/resources/testi-3-3.png" alt="client image 6"></span>
                             </a>
                         </div>
                     </div>
@@ -935,88 +980,44 @@
             }
             }'>
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 1">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 2">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 3">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 4">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 5">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 6">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 7">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 8">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 9">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img src="./assets/images/resources/brand-2-1.png" alt="firdip">
+                        <img src="./assets/images/resources/brand-2-1.png" alt="Brand image 10">
                     </div><!-- /.owl-slide-item-->
                 </div><!-- /.thm-owl__slider -->
             </div><!-- /.container -->
         </div><!-- /.client-carousel -->
         <div id="footer"></div>
     </div><!-- /.page-wrapper -->
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-            <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="./assets/images/logo/logo.png" width="155"
-                        alt="firdip logo"></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:info@avynal.com">info@avynal.com</a>
-                </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:+91-0771-4915561">+91-0771-4915561</a>
-                </li>
-            </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__social">
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i><span
-                        class="sr-only">Linkedin</span></a>
-            </div><!-- /.mobile-nav__social -->
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
     <!-- /.mobile-nav__wrapper -->
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form role="search" method="get" class="search-popup__form" action="#">
-                <input type="text" id="search" placeholder="Search Here...">
-                <button type="submit" aria-label="search submit" class="firdip-btn firdip-btn--base">
-                    <span><i class="icon-search1"></i></span>
-                </button>
-            </form>
-        </div>
-    </div>
+    <div id="beforeFooter"></div>
     <!-- /.search-popup -->
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-        <span class="scroll-to-top__wrapper">
-            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-        </span>
-    </a>
+    <div id="searchPopup"></div>
     <!--  ALl JS Plugins =====================
         ====================================== -->
     <!--  Bootstrap js plugins -->
