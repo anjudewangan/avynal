@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /test/
+
+# Allow access to everything else
+Allow: /
+
+# Block specific crawlers
+User-agent: BadBot
+Disallow: /
+
+# Sitemap location
+Sitemap: 
