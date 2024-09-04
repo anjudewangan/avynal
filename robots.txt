@@ -8,7 +8,10 @@ Allow: /
 
 # Block specific crawlers
 User-agent: BadBot
-Disallow: /
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /images/
 
 # Sitemap location
-Sitemap: 
+Sitemap: http://patiocrm.in/avynal/site-map.xml
+Sitemap: http://patiocrm.in/avynal/site-map.html
