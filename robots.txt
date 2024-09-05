@@ -2,16 +2,16 @@ User-agent: *
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /test/
+Disallow: /cgi-bin/
+Disallow: /images/
 
 # Allow access to everything else
 Allow: /
 
 # Block specific crawlers
 User-agent: BadBot
-Disallow: /private/
-Disallow: /cgi-bin/
-Disallow: /images/
+Disallow: /
 
 # Sitemap location
-Sitemap: http://patiocrm.in/avynal/site-map.xml
+Sitemap: http://patiocrm.in/avynal/sitemap.xml
 Sitemap: http://patiocrm.in/avynal/site-map.html
