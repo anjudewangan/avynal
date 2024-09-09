@@ -27,6 +27,13 @@
     <link rel="icon" type="image/webp" sizes="64x64" href="./assets/images/logo/favicon-64x64.webp">
     <link rel="icon" type="image/webp" sizes="128x128" href="./assets/images/logo/favicon-128x128.webp">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- ===========  All Stylesheet ================= -->
     <!--  Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -50,12 +57,6 @@
         <link rel="stylesheet" href="./assets/css/firdip.css">
     </noscript>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
 
     <!-- Loading Lazy -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
@@ -63,17 +64,32 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const lazyImages = document.querySelectorAll("img.lazyload");
-
-            lazyImages.forEach(img => {
-                if (img.complete) {
-                    img.classList.add("ls-is-cached", "lazyloaded");
-                } else {
-                    img.addEventListener("load", function () {
-                        img.classList.add("lazyloaded");
+            if ('IntersectionObserver' in window) {
+                const lazyBgElements = document.querySelectorAll('.lazy-bg');
+                const loadBackgroundImage = (entry) => {
+                    const element = entry.target;
+                    const bgImage = element.getAttribute('data-bg');
+                    element.style.backgroundImage = `url(${bgImage})`;
+                    observer.unobserve(element);
+                };
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            loadBackgroundImage(entry);
+                        }
                     });
-                }
-            });
+                });
+                lazyBgElements.forEach(element => {
+                    observer.observe(element);
+                });
+            } else {
+                const lazyBgElements = document.querySelectorAll('.lazy-bg');
+                lazyBgElements.forEach(element => {
+                    const imageUrl = getImageUrl();
+                    element.style.backgroundImage = `url(${imageUrl})`;
+
+                });
+            }
         });
     </script>
 </head>
@@ -84,7 +100,7 @@
     <div class="custom-cursor__cursor-two"></div>
     <!-- Preloader Start-->
     <div class="preloader">
-        <div class="preloader__image" style="background-image: url(./assets/images/logo/loader.webp);"></div>
+        <div class="preloader__image lazy-bg" data-bg="background-image: url(./assets/images/logo/loader.webp);"></div>
     </div>
     <!-- Preloader End-->
     <div class="page-wrapper">
@@ -105,8 +121,7 @@
 	    }'>
                 <div class="item">
                     <div class="main-slider-one__item">
-                        <div class="main-slider-one__bg"
-                            style="background-image: url(./assets/images/banner/banner1.webp);"></div>
+                        <div class="main-slider-one__bg lazy-bg" data-bg="./assets/images/banner/banner1.webp"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -127,8 +142,7 @@
                 </div>
                 <div class="item">
                     <div class="main-slider-one__item">
-                        <div class="main-slider-one__bg"
-                            style="background-image: url(./assets/images/banner/banner2.webp);"></div>
+                        <div class="main-slider-one__bg lazy-bg" data-bg="./assets/images/banner/banner2.webp"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -148,8 +162,7 @@
                 </div>
                 <div class="item">
                     <div class="main-slider-one__item">
-                        <div class="main-slider-one__bg"
-                            style="background-image: url(./assets/images/banner/banner3.webp);"></div>
+                        <div class="main-slider-one__bg lazy-bg" data-bg="./assets/images/banner/banner3.webp"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -176,18 +189,17 @@
             <div class="container">
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-md-4">
-                        <div class="feature-one__item wow fadeInUp" data-wow-duration='1500ms'
-                            data-wow-delay='300ms'>
+                        <div class="feature-one__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
                             <div class="feature-one__item__icon">
                                 <i class="fa-solid fa-lightbulb"></i>
                             </div>
                             <h4 class="feature-one__item__title">Innovative Technology</h4>
-                            <p class="feature-one__item__text">We use advanced aerosol fire suppression agents with an efficient system design.</p>
+                            <p class="feature-one__item__text">We use advanced aerosol fire suppression agents with an
+                                efficient system design.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <div class="feature-one__item wow fadeInUp" data-wow-duration='1500ms'
-                            data-wow-delay='500ms'>
+                        <div class="feature-one__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='500ms'>
                             <div class="feature-one__item__icon">
                                 <i class="fa-solid fa-people-group"></i>
                             </div>
@@ -197,8 +209,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <div class="feature-one__item wow fadeInUp" data-wow-duration='1500ms'
-                            data-wow-delay='700ms'>
+                        <div class="feature-one__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms'>
                             <div class="feature-one__item__icon">
                                 <i class="fa-brands fa-instalod"></i>
                             </div>
@@ -214,7 +225,8 @@
                                 <i class="fa-solid fa-users-gear"></i>
                             </div>
                             <h4 class="feature-one__item__title">Superior Customer Service</h4>
-                            <p class="feature-one__item__text">Committed to exceptional customer support throughout the process.</p>
+                            <p class="feature-one__item__text">Committed to exceptional customer support throughout the
+                                process.</p>
                         </div>
                     </div>
                 </div>
@@ -312,7 +324,7 @@
         <!-- About Section End -->
         <!-- Service Section Start -->
         <section class="service-page service-page--home">
-            <div class="service-page__bg" style="background-image: url(./assets/images/shapes/service-1-1.webp);"></div>
+            <div class="service-page__bg lazy-bg" data-bg="background-image: url(./assets/images/shapes/service-1-1.webp);"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -553,7 +565,7 @@
         <!-- Service Section End -->
         <!-- Funfact Section Start -->
         <section class="funfact-one funfact-one--home">
-            <div class="funfact-one__bg" style="background-image: url(./assets/images/shapes/funfact-bg.webp);"></div>
+            <div class="funfact-one__bg lazy-bg" data-bg="background-image: url(./assets/images/shapes/funfact-bg.webp);"></div>
             <div class="container">
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-md-4 col-6">
@@ -614,7 +626,7 @@
         <!-- Funfact Section End -->
         <!-- product Section Start -->
         <section class="why-choose-one why-choose-one--home">
-            <div class="why-choose-one__bg" style="background-image: url(./assets/images/shapes/why-bg.webp);"></div>
+            <div class="why-choose-one__bg lazy-bg" data-bg="background-image: url(./assets/images/shapes/why-bg.webp);"></div>
             <div class="container">
                 <div class="row gutter-y-30">
                     <div class="col-lg-7">
@@ -641,8 +653,7 @@
                                             and heat absorption.</p>
                                     </div>
                                     <div class="why-choose-one__feature__icon">
-                                        <div class="why-choose-one__feature__icon__bg"
-                                            style="background-image: url(./assets/images/product/bg.webp);">
+                                        <div class="why-choose-one__feature__icon__bg lazy-bg" data-bg="background-image: url(./assets/images/product/bg.webp);">
                                         </div>
                                         <i class="fa-solid fa-fire"></i>
                                     </div>
@@ -650,8 +661,7 @@
                                 <div class="why-choose-one__feature__item why-choose-one__feature__item--two  wow fadeInUp"
                                     data-wow-duration='1500ms' data-wow-delay='300ms'>
                                     <div class="why-choose-one__feature__icon">
-                                        <div class="why-choose-one__feature__icon__bg"
-                                            style="background-image: url(./assets/images/product/bg.webp);">
+                                        <div class="why-choose-one__feature__icon__bg lazy-bg" data-bg="background-image: url(./assets/images/product/bg.webp);">
                                         </div>
                                         <i class="fa-solid fa-building-shield"></i>
                                     </div>
@@ -687,7 +697,7 @@
         <!-- Blog Section Start -->
         <section class="blog-one blog-one--home">
             <div class="container">
-                <div class="sec-title  text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                <div class="sec-title text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
                     <h3 class="sec-title__title">Latest News <br> and Upcoming Events</h3>
                 </div>
                 <div class="row gutter-y-30">
@@ -765,7 +775,7 @@
         <!-- Testimonials Section Start -->
         <section class="testimonials-two">
             <div class="container">
-                <div class="sec-title  text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                <div class="sec-title text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
                     <h3 class="sec-title__title">What Our Clients Say</h3>
                 </div>
                 <div class="testimonials-two__carousel__inner">
@@ -1035,8 +1045,8 @@
         defer></script>
     <!--  jquery-appear js plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"
-    integrity="sha512-h3cK8UUr5b3GLA8k7uBvK2c2U/JjnaG7i7KF5OSUE6JPF5B+JCg/LI/VOlIORYK9d0UAUhXDoVVbEDmBFOOLeQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        integrity="sha512-h3cK8UUr5b3GLA8k7uBvK2c2U/JjnaG7i7KF5OSUE6JPF5B+JCg/LI/VOlIORYK9d0UAUhXDoVVbEDmBFOOLeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <!--  owl-carousel js plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
@@ -1045,7 +1055,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <!-- template js -->
     <script src="./assets/js/firdip.js" defer></script>
 </body>
